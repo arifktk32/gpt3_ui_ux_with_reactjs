@@ -1,18 +1,9 @@
 .navbar__wrapper {
-    display: flex;
     justify-content: space-between;
     padding: 4.5rem 0 6rem;
 }
-
-.navbar__wrapper-left {
-    display: flex;
-}
 .navbar__wrapper-left a.logo {
     margin-right: 4rem;
-}
-.navbar__wrapper-left ul,
-.navbar__wrapper-right ul {
-    display: flex;
 }
 .navbar__wrapper ul li a {
     font-weight: 500;

@@ -1,0 +1,12 @@
+.brands ul {
+    justify-content: center;
+    align-items: center;
+    padding: 7.5rem 0 8rem;
+
+    li:not(:last-child) {
+        margin-right: 3rem;
+    }
+    img {
+        max-height: 24.5px;
+    }
+}

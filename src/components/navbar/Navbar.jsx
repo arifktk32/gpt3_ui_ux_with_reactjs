@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../../assets/logo.svg';
-import './navbar.css';
+import './navbar.scss';
 
 export const Navbar = () => (
   <div className='container flex navbar__wrapper'>

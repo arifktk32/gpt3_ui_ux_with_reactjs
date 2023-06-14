@@ -1,7 +1,7 @@
 import React from 'react';
 import people from '../../assets/people.png';
 import ai from '../../assets/ai.png';
-import './header.css';
+import './header.scss';
 
 const Header = () =>  (
   <div className='container header__banner'>

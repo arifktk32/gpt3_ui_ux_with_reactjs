@@ -1,0 +1,31 @@
+.navbar__wrapper {
+    justify-content: space-between;
+    padding: 4.5rem 0 6rem;
+
+    &-left a.logo {
+        margin-right: 4rem;
+    }
+
+    ul li {
+        a {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 25px;
+            margin-right: 4.5rem;
+        }
+        &:last-child a {
+            margin-right: 0;
+        }
+    }
+
+    &-right ul li {
+        &:first-child a {
+            margin-right: 1.5rem;
+        }
+        &.active a {
+            background-color: #FF4820;
+            border-radius: 5px;
+            padding: 0.5rem 1rem;
+        }
+    }
+}

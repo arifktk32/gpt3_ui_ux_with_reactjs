@@ -1,9 +1,9 @@
+@use "../../variables" as v;
 
 .header__banner {
     position: relative;
 
     &-title {
-        font-family: var(--font-family);
         font-weight: 800;
         font-size: 62px;
         line-height: 75px;
@@ -11,10 +11,9 @@
         max-width: 614px;
     }
     &-para {
-        font-family: var(--font-family);
         font-size: 20px;
         line-height: 27px;
-        color: var(--color-text);
+        color: v.$color-text;
         max-width: 554px;
         padding: 2.75rem 0 2.5rem;
     }

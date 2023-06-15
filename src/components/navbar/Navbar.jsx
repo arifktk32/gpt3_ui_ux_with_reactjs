@@ -3,8 +3,8 @@ import logo from '../../assets/images/logo.svg';
 import './navbar.scss';
 
 export const Navbar = () => (
-  <div className='container flex navbar__wrapper'>
-    <div className="flex navbar__wrapper-left">
+  <div className='container flex navbar'>
+    <div className="flex navbar__left">
       <a className='logo' href='#'><img src={logo} alt='GPT3 logo' /></a>
       <ul className='flex'>
         <li><a href='#'>Home</a></li>
@@ -14,7 +14,7 @@ export const Navbar = () => (
         <li><a href='#'>Library</a></li>
       </ul>
     </div>
-    <div className="navbar__wrapper-right">
+    <div className="navbar__right">
       <ul className='flex'>
         <li><a href='#'>Sign in</a></li>
         <li className='active'><a href='#'>Sign up</a></li>

@@ -1,8 +1,8 @@
-.navbar__wrapper {
+.navbar {
     justify-content: space-between;
     padding: 4.5rem 0 6rem;
 
-    &-left a.logo {
+    &__left a.logo {
         margin-right: 4rem;
     }
 
@@ -18,7 +18,7 @@
         }
     }
 
-    &-right ul li {
+    &__right ul li {
         &:first-child a {
             margin-right: 1.5rem;
         }

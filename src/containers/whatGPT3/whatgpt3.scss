@@ -40,5 +40,9 @@
     &__row3 {
         gap: 3rem;
         flex-wrap: wrap;
+
+        .feature {
+            flex: 1 0 30%;
+        }
     }
 }

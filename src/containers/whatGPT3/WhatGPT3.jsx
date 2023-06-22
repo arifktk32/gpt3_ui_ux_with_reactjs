@@ -9,7 +9,7 @@ const WhatGPT3 = () => (
       <Feature title={featuresData[0].title} text={featuresData[0].text} />
     </div>
     <div className='flex wgpt3__row2'>
-      <h1 className='gradient-text'>The possibilities are beyond your imagination</h1>
+      <h1 className='gradient__text'>The possibilities are beyond your imagination</h1>
       <p>Explore The Library</p>
     </div>
     <div className='flex wgpt3__row3'>

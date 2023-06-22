@@ -5,7 +5,7 @@ import './header.scss';
 
 const Header = () =>  (
   <div className='container header__banner'>
-    <h1 className='gradient-text header__banner-title'>Let’s Build Something amazing with GPT-3 OpenAI</h1>
+    <h1 className='gradient__text header__banner-title'>Let’s Build Something amazing with GPT-3 OpenAI</h1>
     <p className='header__banner-para'>Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment. Party we years to order allow asked of.</p>
     <form name='request-access' id='request-access'>
       <input type='email' name='request-access-email' placeholder='Your Email Address' />

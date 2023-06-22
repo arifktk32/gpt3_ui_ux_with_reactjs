@@ -1,0 +1,45 @@
+@use '../../assets/scss/variables' as v;
+
+.future {
+    justify-content: space-between;
+
+    > div {
+        flex: 0 0 50%;
+    }
+    &__title {
+        max-width: 426px;
+        font-weight: 800;
+        font-size: 34px;
+        line-height: 45px;
+        margin-bottom: 2rem;
+    }
+    &__subtitle {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 30px;
+        color: v.$color-subtext;
+    }
+    .feature {
+        flex-direction: row;
+        justify-content: space-between;
+
+        &:not(:last-child) {
+            margin-bottom: 3rem;
+        }
+
+        &__title {
+            font-size: 18px;
+            line-height: 24px;
+            width: 160px;
+    
+            &::before {
+                top: -7px;
+            }
+        }
+        &__text {
+            width: 350px;
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+}

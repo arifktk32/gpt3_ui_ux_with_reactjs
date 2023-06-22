@@ -3,6 +3,10 @@
 .wgpt3 {
     background: #042C54;
     padding: 4rem 3.25rem;
+
+    &.container {
+        margin-bottom: 12.5rem;
+    }
     
     &__row1 {
         

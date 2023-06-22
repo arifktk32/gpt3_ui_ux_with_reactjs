@@ -1,0 +1,39 @@
+@use '../../assets/scss/variables' as v;
+
+.possibility {
+    
+    &__photo img {
+        max-width: 546px;
+    }
+    &__content {
+        padding-left: 1.25rem;
+        padding-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        max-width: 480px;
+
+        p.copy {
+            color: v.$color-text;
+            font-size: 16px;
+            line-height: 30px;
+            margin: 1.5rem 0 2rem;
+        }
+    }
+    &__title {
+        font-size: 34px;
+        line-height: 45px;
+        font-weight: 800;
+        margin-top: 10px;
+    }
+    &__subtitle {
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 500;
+        color: #71E5FF;
+
+        &:last-child {
+            color: v.$color-subtext;
+        }
+    }
+}

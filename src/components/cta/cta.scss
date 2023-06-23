@@ -1,0 +1,40 @@
+@use '../../assets/scss/variables' as v;
+
+.cta {
+    background: v.$gradient-bar;
+    padding: 2.5rem 3rem;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10.724px;
+    border: 1px solid #000;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    &.container {
+        margin: 9.65rem auto;
+    }
+}
+
+.cta__subtitle {
+    color: #0E0E0E;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1.875rem;
+}
+
+.cta__title {
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 2.8125rem;
+}
+
+.cta__btn button {
+    width: 11.821rem;
+    height: 3.71238rem;
+    border-radius: 40px;
+    background: #000;
+    color: #FFF;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.875rem;
+}

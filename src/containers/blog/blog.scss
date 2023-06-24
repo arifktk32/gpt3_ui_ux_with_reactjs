@@ -1,0 +1,41 @@
+.featured__article {
+    flex: 1;
+
+    .article__content {
+        min-height: 400px;
+        padding: 2rem 1.5rem;
+    }
+}
+
+.nonfeatured__articles {
+    flex: 2;
+    flex-wrap: wrap;
+    margin-left: 3rem;
+    gap: 3rem;
+
+    .article {
+        flex: 0 0 calc(50% - 3rem);
+
+        &__image {
+            text-align: center;
+
+            img {
+                max-height: 130px;
+            }
+        }
+    }
+
+    .article__content {
+        padding: 6px 17px 13px 25px;
+        min-height: 190px;
+    }
+}
+
+.blog__header-title {
+    margin-bottom: 7.5rem;
+    width: 700px;
+    font-size: 62px;
+    font-weight: 800;
+    line-height: 75px;
+    letter-spacing: -2.48px;
+}

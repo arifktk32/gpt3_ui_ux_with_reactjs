@@ -4,6 +4,13 @@
 
     &__left a.logo {
         margin-right: 4rem;
+        display: flex;
+        align-items: center;
+
+        img {
+            width: auto;
+            height: 16px;
+        }
     }
 
     ul li {

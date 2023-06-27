@@ -18,6 +18,8 @@ const Header = () =>  (
     <div className='header__banner-image'>
       <img src={ai} alt='Banner Image' />
     </div>
+    <div id='blur-01'></div>
+    <div id='blur-02'></div>
   </div>
 )
 

@@ -14,6 +14,7 @@ const TheFuture = () => (
         <Feature title={item.title} text={item.text} key={item.title + index} />
       ))}
     </div>
+    <div id='blur-03'></div>
   </div>
 )
 

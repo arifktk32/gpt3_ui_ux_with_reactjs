@@ -1,4 +1,5 @@
 import React from 'react';
+import { RiMenu3Line } from 'react-icons/ri';
 import logo from '../../assets/images/logo.svg';
 import './navbar.scss';
 
@@ -14,11 +15,12 @@ export const Navbar = () => (
         <li><a href='#'>Library</a></li>
       </ul>
     </div>
-    <div className="navbar__right">
-      <ul className='flex'>
+    <div className="flex navbar__right">
+      <ul className='flex navbar__right-account'>
         <li><a href='#'>Sign in</a></li>
         <li className='active'><a href='#'>Sign up</a></li>
       </ul>
+      <RiMenu3Line className='navbar__hamburger-button' color='#fff' size='27' style={{marginLeft: "1rem"}} />
     </div>
   </div>
 )

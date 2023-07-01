@@ -1,5 +1,5 @@
 @use "assets/scss/variables" as v;
-@use "assets/scss/mixins" as m;
+@use "assets/scss/mixins/colors" as c;
 
 * {
     padding: 0;
@@ -24,11 +24,13 @@ li {
 
 .container {
     max-width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin: 0 auto;
 }
 
 .gradient__text {
-    @include m.gradient-text;
+    @include c.gradient-text;
 }
 
 .flex {

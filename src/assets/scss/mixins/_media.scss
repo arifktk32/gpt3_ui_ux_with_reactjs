@@ -1,0 +1,30 @@
+@mixin max-width($breakpoint) {
+    @if ($breakpoint == large) {
+        @media only screen and (max-width: 1199px) {
+            @content;
+        }
+    }
+
+    @else if ($breakpoint == medium) {
+        @media only screen and (max-width: 1023px) {
+            @content;
+        }
+    }
+
+    @else if ($breakpoint == small) {
+        @media only screen and (max-width: 767px) {
+            @content;
+        }
+    }
+
+
+    @else if ($breakpoint == xsmall) {
+        @media only screen and (max-width: 575px) {
+            @content;
+        }
+    }
+
+    @else {
+        @error "UNKNOWN MEDIA BREAKPOINT #{$breakpoint}";
+    }
+}

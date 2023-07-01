@@ -1,6 +1,15 @@
+@use "src/assets/scss/mixins/media.scss";
+
 .navbar {
     justify-content: space-between;
-    padding: 4.5rem 0 6rem;
+    padding-top: 4.5rem;
+    padding-bottom: 6rem;
+    @include media.max-width(medium) {
+        padding-top: 3.5rem;
+    }
+    @include media.max-width(xsmall) {
+        padding-top: 2.5rem;
+    }
 
     &__left a.logo {
         margin-right: 4rem;
@@ -19,9 +28,19 @@
             font-size: 18px;
             line-height: 25px;
             margin-right: 4.5rem;
+
+            @include media.max-width(large) {
+                margin-right: 3.5rem;
+            }
         }
         &:last-child a {
             margin-right: 0;
+        }
+    }
+
+    &__left ul {
+        @include media.max-width(medium) {
+            display: none;
         }
     }
 
@@ -33,6 +52,21 @@
             background-color: #FF4820;
             border-radius: 5px;
             padding: 0.5rem 1rem;
+        }
+    }
+
+    &__right-account {
+
+        @include media.max-width(xsmall) {
+            display: none;
+        }
+    }
+
+    &__hamburger-button {
+        display: none;
+
+        @include media.max-width(medium) {
+            display: flex;
         }
     }
 }

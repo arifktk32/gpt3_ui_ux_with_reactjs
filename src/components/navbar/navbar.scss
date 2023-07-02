@@ -1,24 +1,45 @@
 @use "src/assets/scss/mixins/media.scss";
+@use "src/assets/scss/variables";
 
 .navbar {
     justify-content: space-between;
+    align-items: center;
     padding-top: 4.5rem;
     padding-bottom: 6rem;
+    position: relative;
+
     @include media.max-width(medium) {
         padding-top: 3.5rem;
     }
+
     @include media.max-width(xsmall) {
         padding-top: 2.5rem;
     }
 
-    &__left a.logo {
-        margin-right: 4rem;
-        display: flex;
-        align-items: center;
+    &__left {
+        a.logo {
+            margin-right: 4rem;
+            display: flex;
+            align-items: center;
 
-        img {
-            width: auto;
-            height: 16px;
+            img {
+                width: auto;
+                height: 16px;
+            }
+        }
+
+        ul li {
+            a {
+                margin-right: 4.5rem;
+
+                @include media.max-width(large) {
+                    margin-right: 3.5rem;
+                }
+            }
+
+            &:last-child a {
+                margin-right: 0;
+            }
         }
     }
 
@@ -27,14 +48,6 @@
             font-weight: 500;
             font-size: 18px;
             line-height: 25px;
-            margin-right: 4.5rem;
-
-            @include media.max-width(large) {
-                margin-right: 3.5rem;
-            }
-        }
-        &:last-child a {
-            margin-right: 0;
         }
     }
 
@@ -45,9 +58,6 @@
     }
 
     &__right ul li {
-        &:first-child a {
-            margin-right: 1.5rem;
-        }
         &.active a {
             background-color: #FF4820;
             border-radius: 5px;
@@ -55,7 +65,11 @@
         }
     }
 
-    &__right-account {
+    &__right-account.flex {
+
+        li:first-child a {
+            margin-right: 1.5rem;
+        }
 
         @include media.max-width(xsmall) {
             display: none;
@@ -64,9 +78,68 @@
 
     &__hamburger-button {
         display: none;
+        cursor: pointer;
+        margin-left: 1rem;
 
         @include media.max-width(medium) {
-            display: flex;
+            display: inline-flex;
+        }
+    }
+
+    &__mobilemenu {
+        position: absolute;
+        top: 90px;
+        right: 0;
+        border-radius: 5px;
+        z-index: 1;
+        background-color: variables.$color-footer;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+        padding: 1.5rem 0;
+        -webkit-animation: animation-scale-half-to-full 0.4s;
+        animation: animation-scale-half-to-full 0.4s;
+        min-width: 200px;
+
+        @include media.max-width(xsmall) {
+            top: 75px
+        }
+
+        ul {
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+            text-align: end;
+
+            li, a {
+                display: block;
+                width: 100%;
+            }
+
+            li.active {
+                margin-top: 0.5rem;
+                display: flex;
+                justify-content: flex-end;
+
+                a {
+                    margin-right: 1.5rem;
+                    width: fit-content;
+                }
+            }
+
+            a {
+                padding: 0.5rem 1.5rem 0.5rem 2rem;
+
+                &:hover {
+                    background-color: #052D56;
+                }
+            }
+
+            &.navbar__mobilemenu-sign {
+                display: none;
+
+                @include media.max-width(xsmall) {
+                    display: block;
+                }
+            }
         }
     }
 }

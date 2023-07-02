@@ -37,6 +37,10 @@ li {
     display: flex;
 }
 
+.inline-flex {
+    display: inline-flex;
+}
+
 #blur-01 {
     border-radius: 1013px;
     width: 1013px;
@@ -71,4 +75,28 @@ li {
     bottom: -100px;
     z-index: -1;
     background: radial-gradient(circle at 50% 50%, rgba(0, 40, 83, 0.5) 0%, rgb(4, 12, 24) 70%);
+}
+
+@-webkit-keyframes animation-scale-half-to-full {
+    from {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    to {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes animation-scale-half-to-full {
+    from {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    to {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
 }

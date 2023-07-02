@@ -31,10 +31,28 @@
         ul li {
             a {
                 margin-right: 4.5rem;
+                position: relative;
+                display: flex;
 
                 @include media.max-width(large) {
                     margin-right: 3.5rem;
                 }
+
+                &::after {
+                    display: none;
+                    height: 2px;
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    background: rgb(10 56 104);
+                    bottom: -10px;
+                    left: 0;
+                    box-shadow: 0px 0px 6px 3px rgb(10 56 104);
+                }
+
+                &:hover:after {
+                    display: block;
+                } 
             }
 
             &:last-child a {

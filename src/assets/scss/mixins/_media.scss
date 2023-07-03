@@ -24,6 +24,12 @@
         }
     }
 
+    @else if ($breakpoint == xxsmall) {
+        @media only screen and (max-width: 479px) {
+            @content;
+        }
+    }
+
     @else {
         @error "UNKNOWN MEDIA BREAKPOINT #{$breakpoint}";
     }

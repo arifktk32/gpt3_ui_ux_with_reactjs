@@ -48,8 +48,8 @@ li {
     position: absolute;
     top: -500px;
     left: -400px;
-    z-index: -1;
-    background: radial-gradient(circle at 50% 50%, rgba(0, 40, 83, 0.5) 0%, rgb(4, 12, 24) 70%);
+    z-index: -2;
+    background: radial-gradient(circle at 50% 50%, rgba(0, 40, 83, 0.5) 0%, rgb(4 12 24 / 0%) 70%);
 }
 
 #blur-02 {
@@ -61,8 +61,8 @@ li {
     left: auto;
     right: -300px;
     bottom: -235px;
-    z-index: -1;
-    background: radial-gradient(circle at 50% 50%, rgba(0, 40, 83, 0.5) 0%, rgb(4, 12, 24) 70%);
+    z-index: -2;
+    background: radial-gradient(circle at 50% 50%, rgba(0, 40, 83, 0.5) 0%, rgb(4 12 24 / 0%) 70%);
 }
 #blur-03 {
     border-radius: 777px;
@@ -73,8 +73,8 @@ li {
     right: auto;
     left: -400px;
     bottom: -100px;
-    z-index: -1;
-    background: radial-gradient(circle at 50% 50%, rgba(0, 40, 83, 0.5) 0%, rgb(4, 12, 24) 70%);
+    z-index: -2;
+    background: radial-gradient(circle at 50% 50%, rgba(0, 40, 83, 0.5) 0%, rgb(4 12 24 / 0%) 70%);
 }
 
 @-webkit-keyframes animation-scale-half-to-full {

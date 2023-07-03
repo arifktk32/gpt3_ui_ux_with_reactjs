@@ -1,4 +1,5 @@
 @use "../../assets/scss/variables" as v;
+@use "../../assets/scss/mixins/media";
 
 .header__banner {
     position: relative;
@@ -9,17 +10,45 @@
         line-height: 75px;
         letter-spacing: -0.04em;
         max-width: 614px;
+
+        @include media.max-width(medium) {
+            font-size: 54px;
+            line-height: 65px;
+        }
+
+        @include media.max-width(small) {
+            font-size: 48px;
+            line-height: 62px;
+        }
+
+        @include media.max-width(xsmall) {
+            font-size: 36px;
+            line-height: 42px;
+        }
     }
+
     &-para {
         font-size: 20px;
         line-height: 27px;
         color: v.$color-text;
         max-width: 554px;
         padding: 2.75rem 0 2.5rem;
+        
+        @include media.max-width(xsmall) {
+            font-size: 18px;
+            line-height: 26px;
+            padding: 2rem 0 1.75rem;
+        }
     }
+
     &-people {
         padding-top: 2.5rem;
         align-items: center;
+
+        @include media.max-width(small) {
+            flex-direction: column;
+            text-align: center;
+        }
 
         p {
             font-weight: 500;
@@ -29,14 +58,31 @@
             margin-left: 1.5rem;
         }
     }
+
     &-image img {
         position: absolute;
         right: -105px;
         top: -85px;
         max-width: 650px;
+        z-index: -1;
+
+        @include media.max-width(medium) {
+            opacity: 0.4;
+        }
+
+        @include media.max-width(xxsmall) {
+            right: -170px;
+        }
     }
 }
+
 form#request-access {
+
+    @include media.max-width(xsmall) {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
     input[type=email] {
         width: 456px;
         height: 73px;
@@ -47,7 +93,24 @@ form#request-access {
         line-height: 27px;
         color: #3D6184;
         padding: 1.5rem 2rem;
+        outline: none;
+
+        @include media.max-width(small) {
+            width: 356px;
+            height: 63px;
+            font-size: 18px;
+            line-height: 24px;
+            padding: 1rem 1.5rem;
+        }
+
+        @include media.max-width(xsmall) {
+            width: 100%;
+            border-radius: 5px;
+            height: 53px;
+            padding: 0.5rem 1rem;
+        }
     }
+
     button[type=submit] {
         width: 174px;
         height: 73px;
@@ -58,5 +121,18 @@ form#request-access {
         font-size: 20px;
         line-height: 27px;
         color: #FFFFFF;
+
+        @include media.max-width(small) {
+            width: 150px;
+            height: 63px;
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+        @include media.max-width(xsmall) {
+            width: 100%;
+            border-radius: 5px;
+            height: 53px;
+        }
     }
 }

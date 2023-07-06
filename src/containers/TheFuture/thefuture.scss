@@ -1,44 +1,92 @@
 @use '../../assets/scss/variables' as v;
+@use '../../assets/scss/mixins/media';
 
 .future {
     justify-content: space-between;
-    position: relative;
 
-    > div {
-        flex: 0 0 50%;
+    @include media.max-width(medium) {
+        flex-direction: column;
     }
+
+    &__left {
+        flex: 1;
+        margin-right: 6.5rem;
+        
+        @include media.max-width(medium) {
+            margin-right: 0;
+            margin-bottom: 5rem;
+        }
+    }
+    &__right {
+        flex: 1.5;
+        flex-direction: column;
+    }
+
     &__title {
         max-width: 426px;
         font-weight: 800;
         font-size: 34px;
         line-height: 45px;
         margin-bottom: 2rem;
+
+        @include media.max-width(medium) {
+            max-width: none;
+        }
+
+        @include media.max-width(xsmall) {
+            font-size: 28px;
+            line-height: 42px;
+            margin-bottom: 1rem;
+        }
     }
+
     &__subtitle {
         font-weight: 500;
         font-size: 16px;
         line-height: 30px;
         color: v.$color-subtext;
     }
+
     .feature {
         flex-direction: row;
         justify-content: space-between;
 
+        @include media.max-width(xsmall) {
+            flex-direction: column;
+        }
+
         &:not(:last-child) {
             margin-bottom: 3rem;
+
+            @include media.max-width(medium) {
+                margin-bottom: 2rem;
+            }
+            
+            @include media.max-width(xsmall) {
+                margin-bottom: 3rem;
+            }
         }
 
         &__title {
             font-size: 18px;
             line-height: 24px;
             width: 160px;
-    
+
+            @include media.max-width(xsmall) {
+                margin-bottom: 0.5rem;
+            }
+
             &::before {
                 top: -7px;
+
+                @include media.max-width(xsmall) {
+                    top: -10px
+                }
             }
         }
+
         &__text {
-            width: 350px;
+            max-width: 350px;
             font-size: 14px;
             line-height: 24px;
         }

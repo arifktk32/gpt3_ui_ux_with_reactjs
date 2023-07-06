@@ -8,13 +8,13 @@ const TheFuture = () => (
     <div className='future__left'>
       <h1 className='gradient__text future__title'>The Future is Now and You Just Need To Realize It. Step into Future Today & Make it Happen.</h1>
       <p className='future__subtitle'>Request Early Access to Get Started</p>
+      <div id='blur-03'></div>
     </div>
-    <div className='future__right'>
+    <div className='flex future__right'>
       {featuresArray.map((item, index) => (
         <Feature title={item.title} text={item.text} key={item.title + index} />
       ))}
     </div>
-    <div id='blur-03'></div>
   </div>
 )
 

@@ -8,6 +8,14 @@
         margin-bottom: 12.5rem;
         padding: 4rem 3.25rem;
 
+        @include media.max-width(medium) {
+            margin-bottom: 6.5rem;
+        }
+        
+        @include media.max-width(xsmall) {
+            margin-bottom: 5.5rem;
+        }
+
         @include media.max-width(large) {
             max-width: calc(100% - 30px);
         }

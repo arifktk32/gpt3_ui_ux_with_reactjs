@@ -1,11 +1,16 @@
+@use 'src/assets/scss/mixins/media.scss';
+
 .brands ul {
     justify-content: center;
     align-items: center;
     padding: 7.5rem 0 8rem;
+    flex-wrap: wrap;
+    gap: 3rem;
 
-    li:not(:last-child) {
-        margin-right: 3rem;
+    @include media.max-width(small) {
+        padding: 4.5rem 0 5rem;
     }
+
     img {
         max-height: 24.5px;
     }

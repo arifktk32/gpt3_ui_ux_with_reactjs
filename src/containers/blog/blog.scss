@@ -1,9 +1,72 @@
+@use '../../assets/scss/mixins/media' as m;
+
+.blog {
+
+    &__body {
+        @include m.max-width(medium) {
+            flex-direction: column;
+        }
+
+        .article__title {
+
+            @include m.max-width(xsmall) {
+                font-size: 18.11px;
+                font-weight: 800;
+                line-height: 28.287px;
+            }
+        }
+    }
+
+    &__header-title {
+        margin-bottom: 7.5rem;
+        width: 700px;
+        font-size: 62px;
+        font-weight: 800;
+        line-height: 75px;
+        letter-spacing: -2.48px;
+
+        @include m.max-width(medium) {
+            margin-bottom: 4rem;
+            font-size: 48px;
+            line-height: 62px;
+        }
+
+        @include m.max-width(small) {
+            margin-bottom: 3rem;
+            font-size: 36px;
+            line-height: 58px;
+        }
+
+        @include m.max-width(xsmall) {
+            margin-bottom: 2rem;
+            font-size: 28px;
+            line-height: 40px;
+        }
+    }
+}
+
 .featured__article {
     flex: 1;
+
+    @include m.max-width(medium) {
+        margin-bottom: 3rem;
+        max-width: 688px;
+    }
 
     .article__content {
         min-height: 400px;
         padding: 2rem 1.5rem;
+
+        @include m.max-width(small) {
+            min-height: initial;
+            display: flex;
+            flex-direction: column;
+            gap: 6rem;
+        }
+
+        @include m.max-width(xsmall) {
+            gap: 3rem;
+        }
     }
 }
 
@@ -13,8 +76,21 @@
     margin-left: 3rem;
     gap: 3rem;
 
+    @include m.max-width(medium) {
+        margin-left: 0;
+    }
+
     .article {
         flex: 0 0 calc(50% - 3rem);
+
+        @include m.max-width(medium) {
+            max-width: 320px;
+        }
+
+        @include m.max-width(small) {
+            flex-basis: initial;
+            width: 100%;
+        }
 
         &__image {
             text-align: center;
@@ -29,13 +105,4 @@
         padding: 6px 17px 13px 25px;
         min-height: 190px;
     }
-}
-
-.blog__header-title {
-    margin-bottom: 7.5rem;
-    width: 700px;
-    font-size: 62px;
-    font-weight: 800;
-    line-height: 75px;
-    letter-spacing: -2.48px;
 }

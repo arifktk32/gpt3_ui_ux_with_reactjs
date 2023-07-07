@@ -1,18 +1,50 @@
 @use '../../assets/scss/variables' as v;
+@use '../../assets/scss/mixins/media' as m;
 
 .possibility {
-    margin: 3rem auto 10rem;
+
+    @include m.max-width(small) {
+        flex-direction: column;
+    }
+
+    &.container {
+        margin-top: 3rem;
+        margin-bottom: 10rem;
+
+        @include m.max-width(small) {
+            margin-bottom: 5rem;
+        }
+
+        @include m.max-width(xsmall) {
+            margin-bottom: 3rem;
+        }
+    }
     
-    &__photo img {
-        max-width: 546px;
+    &__photo {
+        flex: 1;
+        margin-right: 2rem;
+
+        @include m.max-width(small) {
+            margin-bottom: 2rem;
+        }
+
+        img {
+            max-width: 546px;
+            width: 100%;
+        }
     }
     &__content {
+        flex: 1;
         padding-left: 1.25rem;
         padding-bottom: 2rem;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         max-width: 480px;
+
+        @include m.max-width(small) {
+            padding-left: 0;
+        }
 
         p.copy {
             color: v.$color-text;
@@ -26,6 +58,11 @@
         line-height: 45px;
         font-weight: 800;
         margin-top: 10px;
+
+        @include m.max-width(xsmall) {
+            font-size: 28px;
+            line-height: 40px;
+        }
     }
     &__subtitle {
         font-size: 16px;

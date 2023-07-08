@@ -1,8 +1,17 @@
 @use '../../assets/scss/variables' as v;
+@use '../../assets/scss/mixins/media' as m;
 
 footer {
     background-color: v.$color-footer;
     margin-top: 9.5rem;
+
+    @include m.max-width(small) {
+        margin-top: 6rem;
+    }
+
+    @include m.max-width(xsmall) {
+        margin-top: 5rem;
+    }
 
     * {
         color: #FFF;
@@ -23,6 +32,24 @@ footer {
         font-weight: 800;
         line-height: 75px;
         letter-spacing: -2.48px;
+
+        @include m.max-width(medium) {
+            margin-top: 8rem;
+            font-size: 54px;
+            line-height: 68px;
+        }
+
+        @include m.max-width(small) {
+            margin-top: 6rem;
+            font-size: 48px;
+            line-height: 60px;
+        }
+
+        @include m.max-width(small) {
+            margin-top: 5rem;
+            font-size: 38px;
+            line-height: 48px;
+        }
     }
 
     &-button {
@@ -37,6 +64,14 @@ footer {
 .footer__navigation {
     justify-content: space-between;
     flex-wrap: wrap;
+    
+    &-col:not(:last-child) {
+        margin-right: 4rem;
+
+        @include m.max-width(small) {
+            margin-bottom: 4rem;
+        }
+    }
 
     h3 {
         margin-bottom: 2rem;
@@ -54,7 +89,7 @@ footer {
         }
     }
 
-    &-col1 p {
+    &-col.col1 p {
         width: 168px;
         margin-top: 25px;
         font-size: 12px;

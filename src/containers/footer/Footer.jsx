@@ -10,11 +10,11 @@ const Footer = () => (
         <button className='footer__cta-button'>Request Early Access</button>
       </div>
       <div className='flex footer__navigation'>
-        <div className='footer__navigation-col1'>
+        <div className='footer__navigation-col col1'>
           <img src={logo} alt='footer logo' />
           <p>Crechterwoord K12 182 DK Alknjkcb, All Rights Reserved</p>
         </div>
-        <div className='footer__navigation-col2'>
+        <div className='footer__navigation-col col2'>
           <h3>Links</h3>
           <ul>
             <li><a href='#'>Overons</a></li>
@@ -23,7 +23,7 @@ const Footer = () => (
             <li><a href='#'>Contact</a></li>
           </ul>
         </div>
-        <div className='footer__navigation-col3'>
+        <div className='footer__navigation-col col3'>
           <h3>Company</h3>
           <ul>
             <li><a href='#'>Terms & Conditions</a></li>
@@ -31,7 +31,7 @@ const Footer = () => (
             <li><a href='#'>Contact</a></li>
           </ul>
         </div>
-        <div className='footer__navigation-col4'>
+        <div className='footer__navigation-col col4'>
           <h3>Get in touch</h3>
           <ul>
             <li><p>Crechterwoord K12<br />182 DK Alknjkcb</p></li>
@@ -41,7 +41,7 @@ const Footer = () => (
         </div>
       </div>
       <div className='footer__copyright'>
-        <p>© 2021 GPT-3. All rights reserved.</p>
+        <p>© 2023 GPT-3. All rights reserved.</p>
       </div>
     </div>
   </footer>

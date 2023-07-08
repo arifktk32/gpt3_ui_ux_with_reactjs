@@ -3,7 +3,7 @@ import './brand.scss';
 import { google, slack, atlassian, dropbox, shopify } from './logos.js'
 
 export const Brand = () => (
-  <div className='container brands'>
+  <div className='container brands' id='brands'>
     <ul className='flex'>
       <li>
         <a href='#'>

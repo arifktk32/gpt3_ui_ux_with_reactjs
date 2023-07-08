@@ -4,7 +4,7 @@ import './whatgpt3.scss';
 import featuresData from './features.js';
 
 const WhatGPT3 = () => (
-  <div className='container wgpt3'>
+  <div className='container wgpt3' id='what-gpt3'>
     <div className='wgpt3__row1'>
       <Feature title={featuresData[0].title} text={featuresData[0].text} />
     </div>

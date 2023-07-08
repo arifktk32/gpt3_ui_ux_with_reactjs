@@ -13,7 +13,7 @@ const Blog = () => {
   var nonFeatured = beforeFeatured.concat(afterFeatured);
 
   return (
-    <div className='container blog'>
+    <div className='container blog' id='blog'>
       <div className='blog__header'>
         <h1 className='gradient__text blog__header-title'>A lot is happening, <br />We are blogging about it.</h1>
       </div>

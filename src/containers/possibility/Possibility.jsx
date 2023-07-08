@@ -3,7 +3,7 @@ import './possibility.scss';
 import PossibilityPhoto from '../../assets/images/possibility.png';
 
 const Possibility = () => (
-  <div className='container flex possibility'>
+  <div className='container flex possibility' id='possibility'>
     <div className='possibility__photo'>
       <img src={PossibilityPhoto} alt='photo for The possibilities are beyond your imagination' />
     </div>

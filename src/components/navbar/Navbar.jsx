@@ -8,11 +8,11 @@ export const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const Menu = () => (
     <ul className='flex'>
-      <li><a href='#'>Home</a></li>
-      <li><a href='#'>What is GPT?</a></li>
-      <li><a href='#'>Open AI</a></li>
-      <li><a href='#'>Case Studies</a></li>
-      <li><a href='#'>Library</a></li>
+      <li><a href='#home'>Home</a></li>
+      <li><a href='#what-gpt3'>What is GPT?</a></li>
+      <li><a href='#the-future'>Case Studies</a></li>
+      <li><a href='#possibility'>Open AI</a></li>
+      <li><a href='#blog'>Library</a></li>
     </ul>
   );
 
